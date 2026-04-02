@@ -1,3 +1,6 @@
+
+import java.util.stream.Stream;
+
 public class Main {
     public static void main(String[] args) {
         Student st = new Student(); 
@@ -21,5 +24,34 @@ public class Main {
          c = "XYZ"; 
          System.out.println("this is c " + c);
          System.out.println("this is d " + d);
+
+         String temp = "aRPIT";
+         String temp1 = "ARPIT";
+         int n = temp.length();
+         char ch = temp.charAt(n - 1);
+         System.out.println(temp.equals(temp1));
+         System.out.println(temp.equalsIgnoreCase(temp1));
+         System.out.println(temp.equalsFoldCase(temp1));
+
+         String str1 = "remote";
+         String str2 = "remate";
+
+         int i = str2.compareTo(str1);
+         System.out.println(i);
+         System.out.println(str1.compareToIgnoreCase(str2));
+
+         String name = "Arpit mandhan  ";
+         System.out.println(name.substring(6, 12));
+         System.out.println(name.toLowerCase());
+         System.out.println(name.toUpperCase());
+         System.out.println(name.trim());
+         System.out.println(name.replace('n', 'A'));
+         System.out.println(name.contains("A"));
+         System.out.println(name.startsWith("AM"));
+         System.out.println(name.endsWith("AM"));
+         System.out.println(name.substring(2,7));
+         System.out.println(name.subSequence(2,7));
+
     } 
+
 }
