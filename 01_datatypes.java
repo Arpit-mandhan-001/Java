@@ -55,5 +55,6 @@ class Main {
         System.out.println(array[0] + "this" + array[1] + array[2] + array[3] + array[10] + array[5]); // this is act like string becuz of "this" and everything will be treated as string then concatinated as string
         System.out.println(array[0] + array[1] + array[2] + array[3] + array[10] + array[5]); // in this it is treated number and everything is added.
 
+        
     } 
 }
